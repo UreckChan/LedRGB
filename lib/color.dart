@@ -12,10 +12,10 @@ class ColorScreen extends StatefulWidget {
 }
 
 class _ColorScreenState extends State<ColorScreen> {
-  Color _currentColor = Colors.blue;
+  Color _currentColor = Colors.green;
   var _switchValue = false;
   final _controller = CircleColorPickerController(
-    initialColor: Colors.blue,
+    initialColor: Colors.green,
   );
 
   @override
@@ -23,12 +23,12 @@ class _ColorScreenState extends State<ColorScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(26, 26, 26, 1),
+        backgroundColor: Color.fromRGBO(255, 255, 255, 1),
         appBar: AppBar(
           title: const Text(
             'RGB LED',
             style: TextStyle(
-              color: Color.fromRGBO(217, 217, 217, 1),
+              color: Color.fromRGBO(0, 0, 0, 1),
               fontWeight: FontWeight.bold,
             ),
           ),
